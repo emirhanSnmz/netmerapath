@@ -1,180 +1,24 @@
-# netmerapath
-netpath
-wildfly_home=/Users/onur/netmera/wildfly-9.0.2.Final
-shell_apps_home=/Users/onur/netmera/shellapps
-elastic_home=/usr/local/Cellar/elasticsearch
-LOG_DIR=/Users/onur/netmera/shellapps/logs
-​
-CLICKHOUSE_HOME_DIRECTORY=/Users/onur/netmera/DATA/
-​
-HZ_INDEX_FILE_DIRECTORY=/Users/onur/netmera/shellapps/index_files
-​
-## In processResources task, those are replaced into
-## original properties files...
-​
-#ROUTING_TABLE_MONGO=127.0.0.1:27017
-#CASSANDRA_CONTACTPOINTS=127.0.0.1
-#CASSANDRA_PORT=9042
-​
-MYSQL_JDBC_URL=jdbc\:mysql\://127.0.0.1\:3306/netmera?#useUnicode=true&characterEncoding=UTF-8
-MYSQL_USERNAME=root
-MYSQL_PASSWORD=root
-#MYSQL_JDBC_URL=jdbc\:mysql\://10.34.169.12\:3306/netmera?useUnicode=true&characterEncoding=UTF-8
-#MYSQL_USERNAME=netmera-sdpaas
-#MYSQL_PASSWORD=aee7d7a184d8d3ebe780c73a2eb13a8d
-​
-​
-#MONGO_USERNAME=mongo-user
-#MONGO_PASSWORD=Corp123..
-#MONGO_TABLE_ROUTING=localhost:27017
-MONGO_USERNAME=netmera-mongo-nova
-MONGO_PASSWORD=e1726ef0cb362c590ced214c518d8e41
-MONGO_TABLE_ROUTING=10.34.169.12:27017
-​
-# NOVA
-CASSANDRA_USERNAME=cassandranova
-CASSANDRA_PASSWORD=685cc7dd07be1fd665087ba6935a00f2
-CASSANDRA_CONTACTPOINTS=10.34.169.12
-CASSANDRA_PORT=9042
-​
-# PROD
-#CASSANDRA_USERNAME=netmera-cassandra-prod
-#CASSANDRA_PASSWORD=8da7816faaa198f9c6e64db3368bb613
-#CASSANDRA_CONTACTPOINTS=10.34.167.21,10.34.167.22,10.34.167.23
-#CASSANDRA_PORT=9042
-​
-#PROD
-CLICKHOUSE_JDBC_URL=jdbc\:clickhouse\://10.34.167.23\:8123/default
-#PREPROD
-#CLICKHOUSE_JDBC_URL=jdbc\:clickhouse\://10.34.167.210\:8123/default
-#NOVA
-#CLICKHOUSE_JDBC_URL=jdbc\:clickhouse\://10.34.169.12\:8123/default
-​
-MACOS_SERVER_URL=http://37.247.109.51:8088
-​
-​
-NETMERA_DOMAIN=cp.netmera-dev.com
-NETMERA_DOMAIN_URL=http://cp.netmera-dev.com
-NETMERA_CP_DOMAIN_URL=http://cp.netmera-dev.com
-NETMERA_REST_DOMAIN_URL=https://restapi.netmera.com
-NETMERA_WP_URL=http://cp.netmera-dev.com
-NETMERA_S3_URL=https://s3.amazonaws.com/netmera/
-NETMERA_TEMPLATE_URL=http://cp.netmera-dev.com:8080
-NETMERA_SLACK_CHANNEL_URL=https://hooks.slack.com/services/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
-NETMERA_SLACK_ALERTS_CHANNEL_URL=https://hooks.slack.com/services/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
-NETMERA_SLACK_FAST_PUSH_CHANNEL_URL=https://hooks.slack.com/services/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
-GUI_PANEL_COOKIE_DOMAIN=.netmera-dev.com
-EVENT_ATTR_ENABLED=false
-SDK_SURVEY_ENABLED=false
-​
-CDN_BUCKET_NAME=nova
-AMAZON_S3_BUCKET_NAME=netmera
-AMAZON_S3_ICONS_FOLDER=icons/local
-KAFKA_BOOTSTRAP_SERVERS=localhost:9092
-JS_LAUNCH_SCRIPT=js/launch_dev.js
-JS_ADMIN_LAUNCH_SCRIPT=js/launch_admin.js
-​
-​
-# NOVA
-#SAL_HZ_GROUP_NAME=netmera-sdpaas
-#SAL_HZ_GROUP_PWD=netmera-sdpaas
-#SAL_HZ_PORT=5701
-#SAL_HZ_CONTACT_POINTS=10.34.169.12
-#SAL_HZ_CLUSTER_MEMBER_1=10.34.169.12
-#SAL_HZ_CLUSTER_MEMBER_2=10.34.169.12
-​
-# LOCAL
-SAL_HZ_GROUP_NAME=netmera-local
-SAL_HZ_GROUP_PWD=netmera-local
-SAL_HZ_PORT=5701
-SAL_HZ_CONTACT_POINTS=127.0.0.1
-SAL_HZ_CLUSTER_MEMBER_1=127.0.0.1
-SAL_HZ_CLUSTER_MEMBER_2=127.0.0.1
-​
-BEIN_CONNECT_REST_SERVER_IP=https://test-sdp-int-rest.digiturk.net
-BEIN_CONNECT_SYSTEM_AUTHENTICATE=/api/SendPostOfficeBsApi/SystemAuthenticate
-BEIN_CONNECT_GET_CAMPAIGN_PARAMETERS=/api/SendPostOfficeBsApi/GetCampaignParameters
-BEIN_CONNECT_USERNAME=SYSNETMERA
-BEIN_CONNECT_PASSWORD=SYSNETMERA5
-BEIN_CONNECT_APPLICATION_NAME=POSTOFFICE
-BEIN_CONNECT_CHANNEL_NAME=WEB
-BEIN_CONNECT_COMPANY_NAME=NETMERA
-​
-# PROD
-#SPARK_CASSANDRA_HOST=10.34.167.21,10.34.167.22,10.34.167.23
-#SPARK_MASTER=spark://10.34.167.21:7077
-#SPARK_CASSANDRA_HOST=localhost
-SPARK_MASTER=local[2]
-SPARK_LOCAL_DIRECTORY=/tmp
-​
-# NOVA
-SPARK_CASSANDRA_HOST=10.34.169.12
-#SPARK_MASTER=spark://10.34.169.12:7077
-SPARK_EXECUTOR_MEMORY=2g
-INDEX_FILE=index-dev.html
-PREFER_LOCAL_MAIL_SERVER=false
-SIGNUP_DISABLED=false
-LDAP_ENABLED=false
-SECURITY_ENABLED=false
-TAWK_ENABLED=false
-WEBSDK_ENABLED=false
-​
-WEBPACK_ENV=local
-BUILD_ENV=local
-WEBSDK_BUILD_MODE = development
-WEBSDK_BUILD_API_HOST = https://nova.sdpaas.com
-WEBSDK_BUILD_RAW_WEB_DOMAIN = localhost:63342/websdk/dist/
-WEBSDK_BUILD_CDN_HOST = //localhost:63342/websdk/dist/
-WEBSDK_BUILD_LOG_LEVEL = debug
-WEBSDK_BUILD_CDN_HOSTS = localhost
-WEBSDK_BUILD_CDN_USER = ramazank
-WEBSDK_BUILD_CDN_IDENTITY = /Users/ramazank/.ssh/id_rsa
-WEBSDK_BUILD_CDN_ROOT_DIR = /Users/ramazank/dev/data/nm3/ngnix
-WEBSDK_API_BASE= http://cp.wapi.netmera.com/wsdk
-MODULE_HOME_DIR=/Users/onur/shellapps
-​
-​
-# LOCAL
-#TARGETING_HZ_GROUP_NAME=targeting-local
-#TARGETING_HZ_GROUP_PWD=targeting-local
-#TARGETING_HZ_PORT=7701
-#TARGETING_HZ_CONTACT_POINTS=127.0.0.1
-#TARGETING_HZ_CLUSTER_MEMBER_1=127.0.0.1:7701
-#TARGETING_HZ_CLUSTER_MEMBER_2=127.0.0.1:7701
-​
-# NOVA
-TARGETING_HZ_GROUP_NAME=targeting-sdpaas
-TARGETING_HZ_GROUP_PWD=targeting-sdpaas
-TARGETING_HZ_PORT=7701
-TARGETING_HZ_CONTACT_POINTS=10.34.169.12
-TARGETING_HZ_CLUSTER_MEMBER_1=10.34.169.12:7701
-TARGETING_HZ_CLUSTER_MEMBER_2=10.34.169.12:7701
-​
-FAST_HZ_GROUP_NAME=fastpush
-FAST_HZ_GROUP_PWD=fastpush
-FAST_HZ_PORT=6701
-FAST_HZ_CLUSTER_MEMBER_1=10.34.169.12:6701
-FAST_HZ_CLUSTER_MEMBER_2=10.34.169.12:6701
-​
-​
-DEFAULT_HEAP_SIZE=128M
-MSG_HEAP_SIZE=128M
-EVENT_HEAP_SIZE=128M
-APP_HEAP_SIZE=128M
-ANALYTIC_HEAP_SIZE=8g
-HZCLUSTER_HEAP_SIZE=1G
-DEFAULT_MAX_DIRECT_MEMORY=64M
-MSG_MAX_DIRECT_MEMORY=64M
-ANALYTIC_MAX_PERM_SIZE=2g
-​
-RECOMM_SPARK_MASTER=local[2]
-RECOMM_SPARK_EXECUTOR_MEMORY=6g
-RECOMM_SPARK_LOCAL_DIRECTORY=/Users/onur/netmera/spark-data
-​
-IYS_URL=https://api.sandbox.iys.org.tr
-​
-INTELLIGENT_TARGETING_URL=http://10.34.169.12:5000/
-​
-NTM_PROJECT_SRC_URL=file:///Users/onur/netmera/nova
-NTM_SDK_MODULE_PATH=modules/websdk2
-NTM_SDK_SRC_BRANCH=web_pers_2
+server {
+	  listen       80;
+    	  server_name  cp.netmera-dev.com;
+     	  #charset koi8-r;
+    	  #access_log  /var/log/nginx/log/host.access.log  main;
+	
+	  location / {
+     	    proxy_set_header   X-Real-IP $remote_addr;
+     	    proxy_set_header   Host      $http_host;
+  	    proxy_pass         http://127.0.0.1:8080;
+    	    add_header         X-Robots-Tag noindex always;
+            add_header Cache-Control no-cache;
+            expires off;
+            sendfile  off;
+      	    }
+      	   
+      	    #admin sayfasi icin gerekli olan config
+  	    location ~ ^/nmadmin/((js|views|css|img)/.*)$ {
+            alias /home/nurselincanturk/netmera/nova/modules/gui/modules/gui-admin/src/main/webapp/$1;
+            }
+            #gui-panel sayfasi icin gerekli config
+            location ~ ^/((js|views|css|img)/.*)$ {
+            alias /home/nurselincanturk/netmera/nova/modules/gui/modules/gui-panel/src/main/webapp/$1;
+            }
