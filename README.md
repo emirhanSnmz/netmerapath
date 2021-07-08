@@ -5,3 +5,7 @@ alias updatemin='rm /home/nurselincanturk/netmera/nova/modules/gui/modules/gui-p
 
 
 https://code-with-me.jetbrains.com/jdXeLddTM62suZxtGEs_KA#p=IU&fp=87CACFA696C59EE298C2D960CFBEAD7F6EC5E3E20B979270B85C901900A7C8DD
+
+
+
+https://code-with-me.jetbrains.com/nsnanYwXfh22zX6KopKciQ#p=IU&fp=2E463EBA96CDEA18BE54B8E135E3180EE9548B09E7872E8E3738E8FD67517811
